@@ -1,0 +1,42 @@
+Absolute Xpath: where the Xpath is written from the top order, ie html
+    Starts from root , starts by  "/"
+
+relative Xpath: Xpath wiritten from the middle of the html
+we do not user absolute Xpath, if any changes are done to the page,since all objects are touched from top ,
+    there are more chances of script failure
+
+Siblings to siblings:
+    //header/div/button[1]/following-sibling::button[1]
+
+Sibling to parent
+    //header/div/button[1]/parent::div/parent::header
+
+Sibling to Parent to other Sibling
+    //header/div/button[1]/parent::div/parent::header/a[2]--> Child locator
+
+Xpath for which loads has presence of same component more than once in a same page
+(//placeholder[@tagname= 'value'])[value of the particular position]
+
+//select[@id='ctl00_mainContent_ddl_originStation1']//option[@value='ATQ'][contains(text(),'Amritsar (ATQ)')]
+
+Method Purpose
+isEnabled() This method checks if an element is enabled. Returns true if enabled,
+else false for disabled.
+isSelected() This method checks if element is selected (radio button, checkbox, and
+so on). It returns true if selected, else false for deselected
+isDisplayed() This method checks if element is displayed.
+In this recipe, we will use some of these methods to check the status and handle
+possible errors.
+
+Step over: move to next line of code
+Step Into: Move inside the method and performs the execution
+
+https://www.rahulshettyacademy.com/practice-project
+https://rahulshettyacademy.com/seleniumPractise/#/
+
+Conversion of arrays to arraylist
+List<String> *Arraylist name* = Arrays.asList(*Array name to be converted to arraylist*);
+
+There are 2 types of implicit wait:
+1. Webdriverwait -keeps on continuously listing to DOM , once available will proceed further
+2. Fluent wait- we need to give the polling time and total time eg: 2 seconds polling time and 10 seconds total time
